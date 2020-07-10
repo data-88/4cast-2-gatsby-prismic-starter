@@ -45,9 +45,12 @@
   "keywords": [
     "gatsby",
     "prismic",
-    "blog",
-    "portfolio"
+    "learning",
+    "risk"
   ],
+  "resolutions": {
+    "graphql": "^0.13.0"
+  }, 
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
