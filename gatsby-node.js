@@ -1,5 +1,20 @@
 const path = require('path');
 
+exports.onPreBootstrap = () => {
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+    } 
+ }
+
+var fs = require("fs")
+var dir = "./.cache/caches/@prismicio/gatsby-source-prismic-graphql"
+
+exports.onPreBootstrap = () => {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true })
+  }
+}
+
 // graphql function doesn't throw an error so we have to check to check for the result.errors to throw manually
 const wrapper = promise =>
     promise.then(result => {
