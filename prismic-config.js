@@ -1,4 +1,4 @@
 module.exports = {
   // -- Prismic repository GraphQL endpoint
-  apiEndpoint: 'https://your-repo-name.prismic.io/graphql',
+  apiEndpoint: 'https://4cast.cdn.prismic.io/api/v2',
 };
