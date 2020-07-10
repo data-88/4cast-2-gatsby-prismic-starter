@@ -21,10 +21,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      "cli": {
+        "packageManager": "yarn"
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-        resolve: '@prismicio/gatsby-source-prismic-graphql',
+        resolve: 'gatsby-source-prismic-graphql',
         options: {
             repositoryName: '4cast', // (REQUIRED, replace with your own)   	
             linkResolver: () => post => `/${post.uid}`,
