@@ -37,6 +37,9 @@
     "react-router-hash-link": "^1.2.1",
     "smooth-scroll": "^16.0.3"
   },
+  "resolutions": {
+    "graphql": "15.3.0"
+  },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
     "prettier": "^1.18.2"
